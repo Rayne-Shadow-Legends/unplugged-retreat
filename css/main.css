@@ -87,17 +87,21 @@ footer {
   flex-flow: row wrap;
 }
 
+header .content-wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
 header a {
   display: flex;
   justify-content: center;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-header nav {
-}
+header nav {}
 
 nav ul {
-  display:flex;
+  display: flex;
   list-style-type: none;
 }
 
@@ -105,15 +109,15 @@ nav li {
   margin-right: 2rem;
 }
 
-div.contact{
+div.footer-content {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-div.footer-content {
+div.contact {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -124,12 +128,12 @@ div.social {
   align-items: center;
 }
 
-div.social-icons{
+div.social-icons {
   display: flex;
   justify-content: center;
 }
 
-div.social-icons p{
+div.social-icons p {
   display: flex;
   justify-content: center;
   margin-right: 1rem;
@@ -141,45 +145,46 @@ div.social-icons p{
 }
 
 /* -------------------- Mobile Homepage styles-------------------- */
-
 .hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
+aside {
+  display: flex;
+  justify-content: center;
 }
 
 .form-description {
-
 }
 
 .contact-form {
-
 }
 
-section.features {
-
+.features-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.fontawesome-icon {
+.fontawesome-icon {}
 
-}
+h2.reviews {}
 
-h2.reviews {
-
-}
-
-article.reviews {
-
-}
+article.reviews {}
 
 /* -------------------- Mobile FAQ styles-------------------- */
-
 div.faq {
-
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 /* -------------------- Mobile About styles-------------------- */
-
 section.mission {
-
+  display: flex;
+  justify-content: center;
 }
 
 div.mission-content {
@@ -187,7 +192,8 @@ div.mission-content {
 }
 
 section.map {
-
+  display: flex;
+  justify-content: center;
 }
 
 figure {
@@ -195,7 +201,8 @@ figure {
 }
 
 section.contact-section {
-
+  display: flex;
+  justify-content: center;
 }
 
 div.top-contact {
