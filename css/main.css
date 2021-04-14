@@ -80,6 +80,11 @@ textarea {
    ========================================================================== */
 /* -------------------- Base Header - Footer Styles -------------------- */
 
+.site-content {
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+
 header,
 footer {
   display: flex;
@@ -92,15 +97,12 @@ header {
   padding-top: 15px;
 }
 
-header .content-wrapper {
-  display: flex;
-  flex-flow: column;
-  margin: 0;
-}
-
-.header-divider {
-  width: 100%;
-}
+header .header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 
 header a {
   display: flex;
@@ -111,10 +113,11 @@ header a {
 nav ul {
   display: flex;
   list-style-type: none;
+  padding: 0;
 }
 
-nav li {
-  margin-right: 2rem;
+#nav-faq {
+  margin: 0 2rem 0 2rem;
 }
 
 div.footer-content {
@@ -135,7 +138,7 @@ div.contact-form {
   flex-direction: column;
 }
 
-.contact address{
+.contact address {
   display: flex;
   justify-content: center;
 }
@@ -164,11 +167,11 @@ div.social-icons {
   margin-top: 50px;
 }
 
-.social-icons a{
-    text-decoration: none;
+.social-icons a {
+  text-decoration: none;
 }
 
-footer p{
+footer p {
   margin: 0;
 }
 
@@ -187,10 +190,6 @@ header nav {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-
-.hero-area h1 {
-  padding-top: 55px;
 }
 
 aside {
@@ -214,8 +213,8 @@ aside {
   padding-top: 55px;
 }
 
-.features p{
-  maring: 0;
+.features p {
+  margin: 0;
 }
 
 .features article {
@@ -228,9 +227,7 @@ aside {
   flex-direction: column;
 }
 
-.fontawesome-icon {
-
-}
+.fontawesome-icon {}
 
 .reviews h2 {
   margin: 55px 0px;
@@ -245,9 +242,7 @@ aside {
   padding-bottom: 100px;
 }
 
-article.reviews {
-
-}
+article.reviews {}
 
 .container {
   display: flex;
@@ -260,11 +255,6 @@ article.reviews {
 div.faq {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-}
-
-main {
-  padding: 50px 0px 50px;
 }
 
 .container {
@@ -278,20 +268,16 @@ main {
 section.mission {
   display: flex;
   justify-content: center;
-  padding: 50px 0px 50px;
 }
 
-div.mission-content {
-}
+div.mission-content {}
 
 section.map {
   display: flex;
   justify-content: center;
 }
 
-figure {
-
-}
+figure {}
 
 section.contact-section {
   display: flex;
@@ -307,12 +293,12 @@ div.bottom-contact {}
 
 address.bottom-contact {}
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    width: 90%;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 90%;
+}
 
 /* ==========================================================================
    Helper classes
@@ -395,18 +381,85 @@ address.bottom-contact {}
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px)  {
+
+/* tablet header/footer styles */
+.site-content {
+  width: 85%;
+    margin: 0 7.5% 0 7.5%;
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+header .header-content{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+nav {
+  display: flex;
+  flex-basis: 175px;
 }
 
-/* ==========================================================================
+#footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social {
+  margin-left: 50px;
+}
+
+.contact {
+  margin-right: 50px;
+}
+
+/* homepage tablet styles*/
+
+.form-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+  margin-right: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+}
+
+/* FAQ tablet styles?*/
+
+.faq-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 100px 0 100px 0;
+}
+
+.break {
+  display: flex;
+  flex-basis: 100%;
+  height: 0;
+}
+
+.faq-content {
+  width: 35%;
+  flex-basis: 300px;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  /*Desktop*/
+}/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
