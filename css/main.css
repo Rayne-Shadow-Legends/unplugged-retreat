@@ -79,7 +79,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* -------------------- Base Header - Footer Styles -------------------- */
-
 .site-content {
   width: 90%;
   margin: 0 5% 0 5%;
@@ -97,12 +96,12 @@ header {
   padding-top: 15px;
 }
 
-header .header-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
 
 header a {
   display: flex;
@@ -381,85 +380,113 @@ address.bottom-contact {}
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 768px)  {
+@media only screen and (min-width: 768px) {
 
-/* tablet header/footer styles */
-.site-content {
-  width: 85%;
+  /* tablet header/footer styles */
+  .site-content {
+    width: 85%;
     margin: 0 7.5% 0 7.5%;
-}
+  }
 
-header .header-content{
+  header .header-content {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    flex-basis: 100%;
   }
 
-nav {
-  display: flex;
-  flex-basis: 175px;
-}
+  nav {
+    display: flex;
+    flex-basis: 175px;
+  }
 
-#footer-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  #footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.social {
-  margin-left: 50px;
-}
+  .social {
+    margin-left: 50px;
+  }
 
-.contact {
-  margin-right: 50px;
-}
+  .contact {
+    margin-right: 50px;
+  }
 
-/* homepage tablet styles*/
+  /* homepage tablet styles*/
+  .form-description {
+    display: flex;
+    flex-direction: row;
+  }
 
-.form-description {
-  display: flex;
-  flex-direction: row;
-}
+  .form-info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    margin-right: 100px;
+  }
 
-.form-info {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 250px;
-  margin-right: 100px;
-}
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+  }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 300px;
-}
+  /* FAQ tablet styles?*/
+  .faq-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 100px 0 100px 0;
+  }
 
-/* FAQ tablet styles?*/
+  .break {
+    display: flex;
+    flex-basis: 100%;
+    height: 0;
+  }
 
-.faq-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 100px 0 100px 0;
-}
+  .faq-content {
+    flex-basis: 300px;
+  }
 
-.break {
-  display: flex;
-  flex-basis: 100%;
-  height: 0;
-}
+  /*tablet about page*/
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.faq-content {
-  width: 35%;
-  flex-basis: 300px;
-}
-
+  .mission-content p {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
 
   /*Desktop*/
-}/* ==========================================================================
+  /* desktop header/footer styles*/
+  .site-content {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+
+  header {
+    display: flex;
+    flex-basis: 80%;
+  }
+
+  /* desktop about styles */
+  p.mission-content {
+    display: flex;
+    flex-basis: 430px;
+    background-color: red;
+  }
+
+  /*desktop faq styles*/
+}
+
+/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
