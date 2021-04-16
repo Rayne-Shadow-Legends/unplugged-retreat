@@ -433,6 +433,10 @@ address.bottom-contact {}
     flex-basis: 300px;
   }
 
+  .reviews-paragraph {
+    width: 45%;
+  }
+
   /* FAQ tablet styles?*/
   .faq-container {
     display: flex;
@@ -457,8 +461,27 @@ address.bottom-contact {}
     justify-content: space-between;
   }
 
-  .mission-content p {
-    width: 300px;
+  p.mission-content {
+      display: flex;
+      flex-basis: 45%;
+    }
+
+    .top-contact {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 35%;
+      margin-right: 25%;
+    }
+
+    .bottom-contact {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 35%;
+    }
+
+  .contact-content {
+    display: flex;
+    flex-basis: 95%;
   }
 }
 
@@ -467,8 +490,8 @@ address.bottom-contact {}
   /*Desktop*/
   /* desktop header/footer styles*/
   .site-content {
-    width: 90%;
-    margin: 0 5% 0 5%;
+    width: 80%;
+    margin: 0 10% 0 10%;
   }
 
   header {
@@ -476,14 +499,56 @@ address.bottom-contact {}
     flex-basis: 80%;
   }
 
-  /* desktop about styles */
-  p.mission-content {
+  .social {
     display: flex;
-    flex-basis: 430px;
-    background-color: red;
+    flex-basis: 20%;
+    margin: 0 5%;
   }
 
+  .contact {
+    display: flex;
+    flex-basis: 20%;
+    margin: 0 0 0 5%;
+  }
+
+  #footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* desktop homepage styles */
+  .form-description {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20% 0 20%;
+  }
+
+  .form-info {
+    display: flex;
+    flex-basis: 30%;
+    margin: 0;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-basis: 30%
+  }
+
+  .reviews-paragraph {
+    width: 45%;
+  }
+
+  /* desktop about styles */
+
+
+
+  /*430px*/
   /*desktop faq styles*/
+  .faq-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+  }
 }
 
 /* ==========================================================================
