@@ -78,6 +78,55 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* -------------------- Global Styles -------------------- */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.75em;
+}
+
+ul,
+ol {}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  display: flex;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 2rem;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: .9rem;
+  line-height: 1.5rem;
+}
+
+img {}
+
+figure {}
+
+address {}
+
+.content-wrapper {}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 .site-content {
   width: 90%;
@@ -180,6 +229,18 @@ footer p {
   align-items: center;
 }
 
+.tablet-break {
+  display: none;
+}
+
+.desktop-break {
+  display: none;
+}
+
+.mobile-break {
+  display: inline;
+}
+
 /* -------------------- Mobile Homepage styles-------------------- */
 header nav {
   width: 60%;
@@ -234,7 +295,6 @@ aside {
 
 .reviews h3 {
   margin: 25px 0px 25px;
-  width: 50%;
 }
 
 .reviews p {
@@ -414,6 +474,18 @@ address.bottom-contact {}
     margin-right: 50px;
   }
 
+  .mobile-break {
+    display: none;
+  }
+
+.tablet-break {
+  display: inline;
+}
+
+  .desktop-break {
+    display: none;
+  }
+
   /* homepage tablet styles*/
   .form-description {
     display: flex;
@@ -462,22 +534,22 @@ address.bottom-contact {}
   }
 
   p.mission-content {
-      display: flex;
-      flex-basis: 45%;
-    }
+    display: flex;
+    flex-basis: 45%;
+  }
 
-    .top-contact {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 35%;
-      margin-right: 25%;
-    }
+  .top-contact {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    margin-right: 25%;
+  }
 
-    .bottom-contact {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 35%;
-    }
+  .bottom-contact {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+  }
 
   .contact-content {
     display: flex;
@@ -487,7 +559,6 @@ address.bottom-contact {}
 
 @media only screen and (min-width: 1200px) {
 
-  /*Desktop*/
   /* desktop header/footer styles*/
   .site-content {
     width: 80%;
@@ -516,6 +587,18 @@ address.bottom-contact {}
     justify-content: space-between;
   }
 
+  .mobile-break {
+  display: none;
+  }
+
+  .tablet-break {
+    display: none;
+  }
+
+  .desktop-break {
+    display: inline;
+  }
+
   /* desktop homepage styles */
   .form-description {
     display: flex;
@@ -539,9 +622,6 @@ address.bottom-contact {}
   }
 
   /* desktop about styles */
-
-
-
   /*430px*/
   /*desktop faq styles*/
   .faq-content {
