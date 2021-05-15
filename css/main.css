@@ -109,6 +109,7 @@ h1 {
   display: flex;
   font-size: 2.2rem;
   line-height: 2.5rem;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -119,6 +120,8 @@ aside {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
+  font-weight: 500;
+   margin: 0;
   color: #ffffff;
 }
 
@@ -126,6 +129,14 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
+  font-weight: 400;
+}
+
+h3 {
+  color: #e2e3ed;
+}
+
+h4 {
   color: #ffffff;
 }
 
@@ -190,8 +201,6 @@ input[type=button] {
   text-align: center;
   text-transform: uppercase;
 }
-
-
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 .site-content {
@@ -360,7 +369,8 @@ aside {
 .fontawesome-icon {}
 
 .reviews h2 {
-  margin: 55px 0px;
+  padding: 55px 0px;
+  margin: 0;
 }
 
 .reviews h3 {
@@ -371,7 +381,9 @@ aside {
   padding-bottom: 100px;
 }
 
-article.reviews {}
+.reviews-paragraph {
+  padding: 0 0 1px;
+}
 
 .container {
   display: flex;
@@ -381,7 +393,6 @@ article.reviews {}
 }
 
 /* -------------------- Mobile FAQ styles-------------------- */
-
 .faq-wrapper {
   background-color: #527158;
 }
@@ -396,6 +407,13 @@ div.faq {
   flex-direction: column;
   margin-left: 20px;
   width: 90%;
+}
+
+.faq-content h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-flow: column wrap;
 }
 
 /* -------------------- Mobile About styles-------------------- */
@@ -581,7 +599,7 @@ address.bottom-contact {}
   }
 
   p {
-    font-size: .85rem;
+    font-size: .9rem;
     line-height: 1.25rem;
   }
 
@@ -745,7 +763,9 @@ address.bottom-contact {}
   }
 
   /* desktop about styles */
-  /*430px*/
+
+
+
   /*desktop faq styles*/
   .faq-content {
     display: flex;
