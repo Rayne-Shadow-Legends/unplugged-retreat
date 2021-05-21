@@ -107,8 +107,8 @@ a {
 
 h1 {
   display: flex;
-  font-size: 2.2rem;
-  line-height: 2.5rem;
+  font-size: 2.3rem;
+  line-height: 2.6rem;
   font-weight: 500;
   color: #ffffff;
 }
@@ -119,6 +119,7 @@ aside {
 
 h2 {
   font-family: 'Poppins', sans-serif;
+  line-height: 2.3rem;
   font-size: 2rem;
   font-weight: 500;
   margin: 0;
@@ -128,7 +129,7 @@ h2 {
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
@@ -141,7 +142,7 @@ h4 {
 }
 
 p {
-  font-size: .9rem;
+  font-size: .95rem;
   line-height: 1.5rem;
   color: #ffffff;
   font-weight: 100;
@@ -208,8 +209,8 @@ input[type=button] {
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 .site-content {
-  width: 90%;
-  padding: 0 5% 0 5%;
+  width: 80%;
+  padding: 0 10% 0 10%;
 }
 
 header,
@@ -325,9 +326,6 @@ footer p {
 }
 
 /* -------------------- Mobile Homepage styles-------------------- */
-header nav {
-  width: 60%;
-}
 
 .hero-area {
   display: flex;
@@ -394,6 +392,10 @@ aside {
   flex-direction: column;
   margin-left: 20px;
   width: 90%;
+}
+
+.form-description h3 {
+  margin-bottom: 0;
 }
 
 /* -------------------- Mobile FAQ styles-------------------- */
@@ -542,10 +544,33 @@ address.bottom-contact {}
    ========================================================================== */
 @media only screen and (min-width: 768px) {
 
+    /* tablet global font styles */
+
+    h1 {
+      font-size: 2.75rem;
+      line-height: 2.75rem;
+    }
+
+    h2 {
+      font-size: 2.35rem;
+      line-height: 2.5rem;
+    }
+
+    h3,
+    h4 {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+    }
+
+    p {
+      font-size: .95rem;
+      line-height: 1.25rem;
+    }
+
   /* tablet header/footer styles */
   .site-content {
-    width: 85%;
-    padding: 0 7.5% 0 7.5%;
+    width: 80%;
+    padding: 0 10% 0 10%;
   }
 
   header .header-content {
@@ -588,26 +613,6 @@ address.bottom-contact {}
   }
 
   /* homepage tablet styles*/
-  h1 {
-    font-size: 2.75rem;
-    line-height: 3rem;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-  }
-
-  h3,
-  h4 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  p {
-    font-size: .9rem;
-    line-height: 1.25rem;
-  }
 
   .form-description {
     display: flex;
@@ -663,20 +668,23 @@ address.bottom-contact {}
   .top-contact {
     display: flex;
     flex-direction: column;
-    flex-basis: 35%;
-    margin-right: 25%;
+    flex-basis: 40%;
+    margin-right: 20%;
   }
 
   .bottom-contact {
     display: flex;
     flex-direction: column;
-    flex-basis: 35%;
+    flex-basis: 40%;
   }
 
   .contact-content {
     display: flex;
-    flex-basis: 95%;
   }
+
+.contact-content h3 {
+  margin-bottom: 0;
+}
 
   section.contact-section {
     padding: 100px 0px 100px;
@@ -687,6 +695,29 @@ address.bottom-contact {}
   }
 
   @media only screen and (min-width: 1200px) {
+
+    /* desktop global font styles */
+
+    h1 {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    h2 {
+      font-size: 3.2rem;
+      line-height: 3.5rem;
+    }
+
+    h3,
+    h4 {
+      font-size: 2.19rem;
+      line-height: 2.25rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+    }
 
     /* desktop header/footer styles*/
     .site-content {
@@ -738,26 +769,6 @@ address.bottom-contact {}
     }
 
     /* desktop homepage styles */
-    h1 {
-      font-size: 4rem;
-      line-height: 5rem;
-    }
-
-    h2 {
-      font-size: 3.2rem;
-      line-height: 3.5rem;
-    }
-
-    h3,
-    h4 {
-      font-size: 2rem;
-      line-height: 2.25rem;
-    }
-
-    p {
-      font-size: 1.25rem;
-      line-height: 1.5rem;
-    }
 
     .form-description {
       display: flex;
@@ -781,6 +792,7 @@ address.bottom-contact {}
     }
 
     /* desktop about styles */
+
     /*desktop faq styles*/
     .faq-wrapper {
       display: flex;
@@ -801,6 +813,9 @@ address.bottom-contact {}
       padding-bottom: .7em;
     }
 
+.faq-wifi {
+  margin-top: 2.6em;
+}
     /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
