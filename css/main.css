@@ -102,7 +102,8 @@ a {
 }
 
 .hero-area {
-  background-color: cyan;
+  background: url('../img/forest-splash.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 h1 {
@@ -149,12 +150,17 @@ p {
 }
 
 .features {
-  background-color: cyan;
+  background: url('../img/camping-splash.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
-img {}
+img {
+  width: 100%;
+}
 
-figure {}
+figure {
+  margin: 0;
+}
 
 address {}
 
@@ -338,11 +344,11 @@ footer p {
 }
 
 /* -------------------- Mobile Homepage styles-------------------- */
-
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  height: 50rem;
 }
 
 aside {
@@ -365,6 +371,10 @@ input[type=button] {
 }
 
 .features {
+  height: 37.5rem;
+}
+
+.features h2 {
   padding-top: 55px;
 }
 
@@ -579,28 +589,27 @@ address.bottom-contact {}
    ========================================================================== */
 @media only screen and (min-width: 768px) {
 
-    /* tablet global font styles */
+  /* tablet global font styles */
+  h1 {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
 
-    h1 {
-      font-size: 2.75rem;
-      line-height: 2.75rem;
-    }
+  h2 {
+    font-size: 2.35rem;
+    line-height: 2.5rem;
+  }
 
-    h2 {
-      font-size: 2.35rem;
-      line-height: 2.5rem;
-    }
+  h3,
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
 
-    h3,
-    h4 {
-      font-size: 1.5rem;
-      line-height: 1.9rem;
-    }
-
-    p {
-      font-size: .95rem;
-      line-height: 1.25rem;
-    }
+  p {
+    font-size: .95rem;
+    line-height: 1.25rem;
+  }
 
   /* tablet header/footer styles */
   .site-content {
@@ -628,9 +637,9 @@ address.bottom-contact {}
     padding-top: 1.7em;
   }
 
-.copyright {
-  padding-bottom: 1.7em;
-}
+  .copyright {
+    padding-bottom: 1.7em;
+  }
 
   .social {
     margin-left: 50px;
@@ -653,7 +662,6 @@ address.bottom-contact {}
   }
 
   /* homepage tablet styles*/
-
   .form-description {
     display: flex;
     flex-direction: row;
@@ -727,9 +735,9 @@ address.bottom-contact {}
     display: flex;
   }
 
-.contact-content h3 {
-  margin-bottom: 0;
-}
+  .contact-content h3 {
+    margin-bottom: 0;
+  }
 
   section.contact-section {
     padding: 100px 0px 100px;
@@ -742,7 +750,6 @@ address.bottom-contact {}
   @media only screen and (min-width: 1200px) {
 
     /* desktop global font styles */
-
     h1 {
       font-size: 4rem;
       line-height: 5rem;
@@ -814,7 +821,6 @@ address.bottom-contact {}
     }
 
     /* desktop homepage styles */
-
     .form-description {
       display: flex;
       justify-content: space-between;
@@ -837,8 +843,8 @@ address.bottom-contact {}
     .reviews-paragraph {
       width: 45%;
     }
-    /* desktop about styles */
 
+    /* desktop about styles */
     /*desktop faq styles*/
     .faq-wrapper {
       display: flex;
@@ -857,11 +863,13 @@ address.bottom-contact {}
 
     .faq-container h2 {
       padding-bottom: .7em;
+      margin: 0;
     }
 
-.faq-wifi {
-  margin-top: 2.6em;
-}
+    .faq-wifi {
+      margin-top: 2.6em;
+    }
+
     /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
