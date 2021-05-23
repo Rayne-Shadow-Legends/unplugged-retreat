@@ -239,8 +239,15 @@ footer {
   flex-flow: row wrap;
 }
 
-header {
-  padding-top: 15px;
+.unplugged-logo {
+  padding-top: 1rem;
+}
+
+.header-divider {
+  width: 156%;
+  height: 1px;
+  background-color: #3a3a3a;
+  margin: 1rem 0 1rem;
 }
 
 header .header-content {
@@ -260,6 +267,7 @@ nav ul {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 0 0 1.25rem;
 }
 
 nav a {
@@ -399,17 +407,9 @@ input[type=button] {
   margin: 0;
 }
 
-.reviews h3 {
-  margin: 25px 0px 25px;
-}
-
 .reviews p {
   padding-bottom: 3rem;
   margin: 0;
-}
-
-.reviews-paragraph {
-  padding: 0 0 1px;
 }
 
 .container {
@@ -625,9 +625,19 @@ address.bottom-contact {}
     padding: .75em 0 .75em;
   }
 
+  .header-divider {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
   nav {
     display: flex;
     flex-basis: 175px;
+  }
+
+  nav ul {
+    margin: 0;
   }
 
   #footer-content {
@@ -681,13 +691,36 @@ address.bottom-contact {}
     flex-basis: 300px;
   }
 
-  .reviews-paragraph {
-    width: 45%;
-  }
-
   .form-description h3 {
     margin: 1rem 0 0;
   }
+
+  figure.employees {
+    width: 18.75rem;
+  }
+
+  .reviews-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews-content p {
+    width: 18.75rem;
+  }
+
+  .reviews h2 {
+    padding: 3rem 0 0 0;
+    margin: 0;
+  }
+
+.reviews-paragraph h3{
+  padding-bottom: .25rem;
+  margin: 0;
+}
+
+.reviews-container {
+  padding: 1.5rem 0 0 0;
+}
 
   /* FAQ tablet styles?*/
   .faq-container {
@@ -782,6 +815,12 @@ address.bottom-contact {}
       flex-basis: 80%;
     }
 
+    .header-divider {
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+
     .header-content {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -838,10 +877,6 @@ address.bottom-contact {}
     .contact-form {
       display: flex;
       flex-basis: 40%
-    }
-
-    .reviews-paragraph {
-      width: 45%;
     }
 
     /* desktop about styles */
