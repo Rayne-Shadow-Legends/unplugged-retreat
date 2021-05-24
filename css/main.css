@@ -477,10 +477,22 @@ section.mission {
 
 div.mission-content {}
 
-section.map {
-  display: flex;
-  justify-content: center;
-}
+  .map figure {
+      width: 100%;
+      height: 0;
+      padding-bottom: 125%;
+      overflow: hidden;
+      position: relative;
+  }
+
+  .map iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+
 
 figure {}
 
@@ -772,6 +784,10 @@ h1 {
     flex-basis: 45%;
   }
 
+  .map figure {
+      padding-bottom: 50%;
+  }
+
   .top-contact {
     display: flex;
     flex-direction: column;
@@ -940,6 +956,11 @@ h1 {
     }
 
     /* desktop about styles */
+
+    .map figure {
+        padding-bottom: 27.5%;
+    }
+
     /*desktop faq styles*/
     .faq-wrapper {
       display: flex;
