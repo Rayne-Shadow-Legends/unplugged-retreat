@@ -312,11 +312,15 @@ div.social-icons {
   justify-content: center;
 }
 
-.social-icons p {
-  display: flex;
-  justify-content: center;
-  margin-right: 1rem;
-  text-decoration: none;
+.social-icons i {
+  background-color: #527158;
+  padding:.8rem;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 1.25rem 0 1.25rem;
 }
 
 .copyright {
@@ -379,7 +383,7 @@ input[type=button] {
 }
 
 .features {
-  height: 93.75rem;
+  height: 96rem;
 }
 
 .features h2 {
@@ -390,17 +394,19 @@ input[type=button] {
   margin: 0;
 }
 
-.features article {
-  width: 55%;
-}
-
 .features-items {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.fontawesome-icon {}
+.features-items article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 14.25rem;
+}
 
 .reviews h2 {
   padding: 3rem 0 1.5rem 0;
@@ -429,6 +435,11 @@ input[type=button] {
 
 .contact-form h3 {
   margin: 1rem 0 0.5rem;
+}
+
+.features i {
+  font-size: 3.75em;
+  padding: 40px 0;
 }
 
 /* -------------------- Mobile FAQ styles-------------------- */
@@ -477,22 +488,21 @@ section.mission {
 
 div.mission-content {}
 
-  .map figure {
-      width: 100%;
-      height: 0;
-      padding-bottom: 125%;
-      overflow: hidden;
-      position: relative;
-  }
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
 
-  .map iframe {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 figure {}
 
@@ -694,17 +704,15 @@ address.bottom-contact {}
   }
 
   /* homepage tablet styles*/
+  .hero-area {
+    height: 37.5rem;
+  }
 
-.hero-area {
-  height: 37.5rem;
-}
-
-
-h1 {
-  margin: 0;
-  font-size: 3rem;
-  padding-top: 6.25rem;
-}
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+    padding-top: 6.25rem;
+  }
 
   .form-description {
     display: flex;
@@ -730,7 +738,20 @@ h1 {
   }
 
   .features {
-    height: 53.125rem;
+    height: 52.5rem;
+  }
+
+  .features-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 40rem;
+  }
+
+  .features-items article {
+    max-width: 50%;
+    padding-top: 20px;
   }
 
   figure.employees {
@@ -755,12 +776,14 @@ h1 {
     padding: 1.5rem 0 0 0;
   }
 
+
+
   /* FAQ tablet styles?*/
   .faq-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 4.9rem 0 4.9rem 0;
+    padding: 7.6% 0 7.6% 0;
   }
 
   .break {
@@ -785,7 +808,7 @@ h1 {
   }
 
   .map figure {
-      padding-bottom: 50%;
+    padding-bottom: 50%;
   }
 
   .top-contact {
@@ -839,7 +862,7 @@ h1 {
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       line-height: 1.5rem;
     }
 
@@ -903,11 +926,18 @@ h1 {
       font-size: 1.2rem;
     }
 
-    /* desktop homepage styles */
+    .social-icons i {
+      padding: 1rem;
+      border-radius: 50%;
+      width: 1.2rem;
+      height: 1.2rem;
+      margin: 0 1.25rem 0 1.25rem;
+    }
 
-  .hero-area {
-    height: 40rem;
-  }
+    /* desktop homepage styles */
+    .hero-area {
+      height: 40rem;
+    }
 
     .form-description {
       display: flex;
@@ -929,8 +959,18 @@ h1 {
     }
 
     .features {
-      height: 50rem;
+      height: 55.5rem;
     }
+
+    .features-items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+  .features-items aticle {
+    padding: 0;
+  }
 
     .reviews-content {
       display: flex;
@@ -938,9 +978,9 @@ h1 {
       align-items: center;
     }
 
-  .reviews h2 {
+    .reviews h2 {
       padding: 3rem 0 .75rem 0;
-  }
+    }
 
     .reviews-content p {
       width: 100%;
@@ -955,10 +995,13 @@ h1 {
       width: 500px;
     }
 
-    /* desktop about styles */
+    .features-items article {
+      width: 28%;
+    }
 
+    /* desktop about styles */
     .map figure {
-        padding-bottom: 27.5%;
+      padding-bottom: 27.5%;
     }
 
     /*desktop faq styles*/
@@ -973,7 +1016,7 @@ h1 {
       flex-basis: 45%;
     }
 
-      .faq-content h3 {
+    .faq-content h3 {
       margin: .2em 0;
     }
 
