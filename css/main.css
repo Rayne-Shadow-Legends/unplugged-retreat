@@ -240,7 +240,8 @@ footer {
 }
 
 .unplugged-logo {
-  padding-top: 1rem;
+  height: 2rem;
+  padding: 1rem 0 .8rem 0;
 }
 
 .header-divider {
@@ -314,7 +315,7 @@ div.social-icons {
 
 .social-icons i {
   background-color: #527158;
-  padding:.8rem;
+  padding: .8rem;
   border-radius: 50%;
   width: 1rem;
   height: 1rem;
@@ -776,8 +777,6 @@ address.bottom-contact {}
     padding: 1.5rem 0 0 0;
   }
 
-
-
   /* FAQ tablet styles?*/
   .faq-container {
     display: flex;
@@ -968,9 +967,9 @@ address.bottom-contact {}
       flex-wrap: wrap;
     }
 
-  .features-items aticle {
-    padding: 0;
-  }
+    .features-items aticle {
+      padding: 0;
+    }
 
     .reviews-content {
       display: flex;
